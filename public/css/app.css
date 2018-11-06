@@ -124,12 +124,24 @@ div {
 }
 
 .chat-column {
+  position: fixed;
+    width: calc(100% - 20px);
+    max-width: 800px;
     height: 100%;
+    border-radius: 10px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background-color: white;
+
+
+    /*height: 100%;
     padding: 0.9375rem 0 2.625rem 0;
     margin: auto;
     text-align: left;
     max-width: 44rem;
-    min-width: 10.375rem;
+    min-width: 10.375rem;*/
 
 }
 
@@ -145,7 +157,7 @@ div {
   margin: 0.75rem;
   overflow-y: auto;
   overflow-x: hidden;
-  height: calc(100% - 4rem);
+  height: calc(70% - 4rem);
 }
 
 .message-inner {
@@ -183,7 +195,7 @@ div {
   color: #eeeeee;
   letter-spacing: 0.015rem;
   line-height: 3.555rem;
-  background: #d9ab27;
+  background: #2980b9;
   border-radius: 1.25rem 1.25rem 0 1.25rem;
   text-align: left;
   display: block;
@@ -248,7 +260,7 @@ div {
   letter-spacing: 0.015rem;
   line-height: 1.3125rem;
   height: 4.5rem;
-  width: 460px !important;
+  width: 600px !important;
   border-radius: 5px 5px 5px 5px;
   border-color: #e2e2e2;
   padding-left: 1.125rem;
@@ -494,7 +506,7 @@ html{
 
 .options-button {
   color: #ffffff;
-  background-color: #2980b9 ;
+  background-color:#214E6E;
   border-radius: 6px;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -506,6 +518,6 @@ html{
   display: inline-block;
 }
 
-.options-button:hover{
-  background-color: #214E6E;
+.options-button:hover{ 
+  background-color:#2980b9 ;
 }
