@@ -10,30 +10,27 @@ body {
   padding: 0;
 }
 
-.top_menu { /*Campo com o imagens Ari e Logo */
-    /*background-color: #f8f8f8;*/
-    /*margin-left: auto;
-    margin-right: auto;*/
+.top_menu { /*Campo com o imagens Ari e Logo */   
     width: 100%;
-    padding: 100px 0 15px;
-    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    padding: 90px 0 15px;
+    border-bottom: 1px solid #eee;
 }
 
     .top_menu .ari {
-        position: absolute;
-        width: 99%;
-        height: 100px;
-        top: 10px;
-        /*bottom: 0px;*/
-        left: 40px;
+      position: absolute;
+      width: 20%;
+      height: 100px;
+      top: 0px;
+      bottom: 0px;
+      left: 10px;
     }
 
     .top_menu .logo {
-    position: absolute;
-    width: 379px;
+     position: absolute;
+    width: 220px;
     height: 60px;
     top: 30px;
-    right: -60px;
+    right: 0px;
     }
 
 .ari {
@@ -124,25 +121,12 @@ div {
 }
 
 .chat-column {
-  position: fixed;
-    width: calc(100% - 20px);
-    max-width: 800px;
+    position: fixed;
+    width: 100%;
+    max-width: 480px;
     height: 100%;
     border-radius: 10px;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     background-color: white;
-
-
-    /*height: 100%;
-    padding: 0.9375rem 0 2.625rem 0;
-    margin: auto;
-    text-align: left;
-    max-width: 44rem;
-    min-width: 10.375rem;*/
-
 }
 
 .user-typing {
@@ -180,6 +164,23 @@ div {
   transition-timing-function: ease-in;
 }
 
+.message-inner ul {
+    padding: 0px;
+    margin: 10px 0px;
+    list-style: none;
+}
+
+.message-inner p span ul{
+    padding: 0px;
+    margin: 10px 0px;
+    list-style: none;
+}
+
+.message-inner p span ul li{
+    padding: 5px;
+    margin: 5px 0px;
+}
+
 .load .message-inner {
   opacity: 1;
   margin-top: 0.3125rem;
@@ -194,7 +195,7 @@ div {
   font-size: 1.125rem;
   color: #eeeeee;
   letter-spacing: 0.015rem;
-  line-height: 3.555rem;
+  line-height: 2.555rem;
   background: #2980b9;
   border-radius: 1.25rem 1.25rem 0 1.25rem;
   text-align: left;
@@ -206,8 +207,6 @@ div {
 .from-user .message-inner p {
   margin: 0.3125rem;
   padding: 0 0.9375rem;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
-
 }
 
 .from-watson > .message-inner > p {
@@ -253,20 +252,19 @@ div {
 
 
 #textInput {
-  display: inline-block;
-  outline: none;
-  font-size: 1.525rem;
-  color: #214E6E;
-  letter-spacing: 0.015rem;
-  line-height: 1.3125rem;
-  height: 4.5rem;
-  width: 600px !important;
-  border-radius: 5px 5px 5px 5px;
-  border-color: #e2e2e2;
-  padding-left: 1.125rem;
-  margin-bottom: -0.125rem;
-  font-family: Helvetica Neue for IBM, Helvetica Neue, Helvetica, Arial, sans-serif;
-
+    display: inline-block;
+    outline: none;
+    font-size: 1.525rem;
+    color: #214E6E;
+    letter-spacing: 0.015rem;
+    line-height: 1.3125rem;
+    height: 4.5rem;
+    width: 400px !important;
+    border-radius: 5px 5px 5px 5px;
+    border-color: #e2e2e2;
+    padding-left: 1.125rem;
+    margin-bottom: -0.125rem;
+    font-family: Helvetica Neue for IBM, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 #textInput.underline {
@@ -302,8 +300,7 @@ input:-moz-placeholder {
   margin-right: 17rem;
   border-radius: 1,25rem 1,25rem 1,25rem 1,25rem;
   border-color: blue;
-  padding: 15px 20px;
-  position: ;
+  padding: 15px 20px;  
   bottom: 0;
 }
 
@@ -391,7 +388,7 @@ html{
   }
 
   .chat-column {
-    padding-top: 4rem;
+    padding-top: 0px;
   }
 
   #payload-column {
@@ -401,7 +398,7 @@ html{
   }
 }
 
-/* IBM Design fonts https://github.ibm.com/Design/fonts */
+
 @font-face {
   font-family: 'Helvetica Neue for IBM';
   src: url('../fonts/light/h-n-light.eot?') format('eot'),
@@ -475,7 +472,7 @@ html{
   font-style: italic;
 }
 
-/* IBM Icons */
+
 @font-face {
   font-family: 'ibm-icons';
   src:url('../fonts/ibm-icons.eot?ytcz1z') format('eot'),
@@ -487,7 +484,7 @@ html{
   font-style: normal;
 }
 
-/* IBM glyphs */
+
 @font-face {
   font-family: 'ibm-glyph';
   src:url('../fonts/ibm-glyphs.eot?1b8643') format('eot'),
@@ -505,17 +502,17 @@ html{
 }
 
 .options-button {
-  color: #ffffff;
-  background-color:#214E6E;
-  border-radius: 6px;
-  padding-bottom: 0px;
-  padding-top: 0px;
-  padding-left: 8px;
-  padding-right: 6px;
-  margin: 5px;
-  width: 380px;
-  cursor: pointer;
-  display: inline-block;
+    color: #ffffff;
+    background-color: #214E6E;
+    border-radius: 6px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 8px;
+    padding-right: 6px;
+    margin: 5px 0px;
+    width: 100%;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .options-button:hover{ 
